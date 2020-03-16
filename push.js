@@ -12,7 +12,7 @@ const subscriptions =[];
 
 //Set the keys used for encrypting the push messages.
 webPush.setVapidDetails(
-  'BCD Travel',
+  'http://BCDTravel.com',
   process.env.VAPID_PUBLIC_KEY,
   process.env.VAPID_PRIVATE_KEY
 );
