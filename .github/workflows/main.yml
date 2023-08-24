@@ -1,5 +1,14 @@
 name: hello-world
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      enviroment:
+        type: choice
+        description: Pick Enviroment
+        options:
+        - Dev
+        - Test
+        - Stage
 jobs:
   my-job:
     runs-on: ubuntu-latest
